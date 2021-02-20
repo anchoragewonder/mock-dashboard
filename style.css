@@ -146,12 +146,32 @@ ul ul a {
     margin-bottom: 10px;
     display: flex;
     flex-flow: row;
+    justify-content: space-between;
 }
 
 .data-card-sm{
     height: 20vh;
 }
 
+.data-card-lg{
+    height: 40vh;
+}
+
 .test-card{
-    height: 9vh;
+    height: 8vh;
+    text-align: center;
+}
+
+.spacer{
+    justify-content: space-between;
+}
+
+.test1{
+    text-align: center;
+    height: 18vh;
+}
+
+.test2{
+    height: 38vh;
+    text-align: center;
 }

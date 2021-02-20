@@ -86,33 +86,52 @@
                     <i class="fas fa-align-left"></i>
                     <span>Menu</span>
                 </button>
-                <button type="button" class="btn btn-dark">
+                <button type="button" id="darkMode" class="btn btn-dark" onclick="hideButton(this.id)">
                     Dark Mode
+                </button>
+                <button type="button" id="lightMode" class="btn btn-light" onclick="hideButton(this.id)"
+                    style="display: none;">
+                    Light Mode
                 </button>
 
             </div>
             <div id="appData" class="container">
-                <div class="row data-row">
-                    <div class="card col-4 m-1 p-1 data-card-sm">take this</div>
-                    <div class="card col-4 m-1 p-1 data-card-sm">that </div>
-                    <div class="card col-4 m-1 p-1 data-card-sm">and some of this</div>
-                </div>
-                <div class="row data-row">
-                    <div class="card col-8 m-1 p-1 data-card-sm">Blue Eyes white dragon</div>
-                    <div class="card col-4 m-1 p-1 data-card-sm">and some of this</div>
-                </div>
-                <div class="row data-row">
-                    <div class="card col-4 m-1 p-1 data-card-sm">take this</div>
-                    <div class="col-4 m-1 data-card-sm">
-                        <div class="test-card card m-1">this is a test</div>
-                        <div class="test-card card m-1"> this should be below</div>
+                <div class=" row data-row">
+                    <div class="col-4 data-card-sm">
+                        <div class="card text-dark bg-light test1"> this is some text</div>
                     </div>
-                    <div class="card col-4 m-1 p-1 data-card-sm">and some of this</div>
+                    <div class="col-4 data-card-sm">
+                        <div class="card text-dark bg-light test1"> this is some text</div>
+                    </div>
+                    <div class="col-4 data-card-sm">
+                        <div class="card text-dark bg-light test1"> this is some text</div>
+                    </div>
                 </div>
                 <div class="row data-row">
-                    <div class="card col-4 m-1 p-1 data-card-sm">take this</div>
-                    <div class="card col-4 m-1 p-1 data-card-sm">that </div>
-                    <div class="card col-4 m-1 p-1 data-card-sm">and some of this</div>
+                    <div class="col-8 data-card-sm">
+                        <div class="card text-dark bg-light test1"> this is some text</div>
+                    </div>
+                    <div class="col-4 data-card-sm">
+                        <div class="card text-dark bg-light test1"> this is some text</div>
+                    </div>
+                </div>
+                <div class="row data-row">
+                    <div class="col-4 data-card-sm">
+                        <div class="card text-dark bg-light test1"> this is some text</div>
+                    </div>
+                    <div class="col-4 data-card-sm spacer">
+                        <div class="test-card card text-dark bg-light mb-3">this is a test</div>
+                        <div class="test-card card text-dark bg-light"> this should be below</div>
+                    </div>
+                    <div class="col-4 data-card-sm">
+                        <div class="card text-dark bg-light test1"> this is some text</div>
+                    </div>
+                </div>
+                <div class="row data-row">
+                    <div class="col-12 data-card-lg">
+                        <div class="card text-dark bg-light test2"> this is some text</div>
+                    </div>
+
                 </div>
 
             </div>
@@ -131,18 +150,7 @@
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#dismiss').on('click', function () {
-                $('#sidebar').removeClass('active');
-            });
-
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').addClass('active');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-        });
-    </script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
