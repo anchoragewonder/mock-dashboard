@@ -27,5 +27,6 @@ function hideButton(buttonId) {
     }
     if (buttonId == "lightMode") {
         document.getElementById("darkMode").style.display = "block";
+        console.log('dark button should be visable');
     }
 }
