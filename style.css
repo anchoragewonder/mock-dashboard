@@ -127,6 +127,9 @@ ul ul a {
     background: #6f2232;
 }
 
+/* ---------------------------------------------------
+    MAIN CONTENT STYLE
+----------------------------------------------------- */
 #content {
     width: 100%;
     padding: 20px;
@@ -150,16 +153,16 @@ ul ul a {
 .data-row{
     margin-bottom: 10px;
     display: flex;
-    flex-flow: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .data-card-sm{
-    height: 20vh;
+    height: 30vh;
 }
 
 .data-card-lg{
-    height: 40vh;
+    height: 30vh;
 }
 
 .test-card{
@@ -173,10 +176,34 @@ ul ul a {
 
 .test1{
     text-align: center;
-    height: 18vh;
+    height: 28vh;
+    padding-top: 5px;
 }
 
 .test2{
-    height: 38vh;
+    height: 28vh;
     text-align: center;
+}
+
+.ordersHeader{
+    font-size:x-large;
+    font-weight: bold;
+    margin-bottom: 8vh;
+}
+.ordersText{
+    font-size:x-large;
+}
+.flexTest{
+    text-align: center;
+    height: 28vh;
+    padding-top: 5px;
+}
+.chartSpacing{
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 576px) {
+    .chartSpacing{
+        margin-top: 0px;
+    }
 }
