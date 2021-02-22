@@ -91,48 +91,44 @@
             </div>
             <div id="appData" class="container">
                 <div class=" row data-row">
-                    <div class="col-4 data-card-sm">
-                        <div class="card text-dark bg-light test1"> this is some text</div>
+                    <div class="col-sm-4 col-12 data-card-sm">
+                        <div class="card text-dark bg-light test1">
+                            <canvas id="doughnut"></canvas>
+                        </div>
                     </div>
-                    <div class="col-4 data-card-sm">
-                        <div class="card text-dark bg-light test1"> this is some text</div>
-                    </div>
-                    <div class="col-4 data-card-sm">
-                        <div class="card text-dark bg-light test1"> this is some text</div>
-                    </div>
-                </div>
-                <div class="row data-row">
-                    <div class="col-8 data-card-sm">
-                        <div class="card text-dark bg-light test1"> this is some text</div>
-                    </div>
-                    <div class="col-4 data-card-sm">
-                        <div class="card text-dark bg-light test1"> this is some text</div>
+                    <div class="col-sm-8 col-12 data-card-sm">
+                        <div class="card text-dark bg-light test1">
+                            <canvas id="lines" height="220"></canvas>
+                        </div>
                     </div>
                 </div>
                 <div class="row data-row">
-                    <div class="col-4 data-card-sm">
-                        <div class="card text-dark bg-light test1"> this is some text</div>
+                    <div class="col-sm-8 col-12 data-card-sm">
+                        <div class="card text-dark bg-light test1">
+                            <canvas id="bar-chart-horizontal" height="220"></canvas>
+                        </div>
                     </div>
-                    <div class="col-4 data-card-sm spacer">
-                        <div class="test-card card text-dark bg-light mb-3">this is a test</div>
-                        <div class="test-card card text-dark bg-light"> this should be below</div>
-                    </div>
-                    <div class="col-4 data-card-sm">
-                        <div class="card text-dark bg-light test1"> this is some text</div>
+                    <div class="col-sm-4 col-12 data-card-sm">
+                        <div class="card text-dark bg-light flexTest">
+                            <span class='ordersHeader'> Orders Received</span>
+                            <span class='ordersText'>
+                                <span>235k</span>
+                                <i class="fas fa-angle-double-up"></i>
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="row data-row">
                     <div class="col-12 data-card-lg">
                         <div class="card text-dark bg-light test2">
-                            <canvas id="myChart" height="300"></canvas>
+                            <canvas id="myChart" height="220" class='chartSpacing'></canvas>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </div>
+
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -145,7 +141,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-
+    <!-- Chart JS-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
     <script src="scripts.js"></script>
