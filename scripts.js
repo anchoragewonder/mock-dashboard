@@ -38,92 +38,40 @@ function cardStyleToggle() {
 
 };
 
-// Chart JS Creation of Mock Data 
-new Chart(document.getElementById('myChart'), {
-    type: 'bar',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple'],
-        datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        maintainAspectRatio: true,
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-
-
-new Chart(document.getElementById("doughnut"), {
-    type: 'doughnut',
-    data: {
-        datasets: [{
-            data: [100, 20, 30],
-            backgroundColor: [
-                '#3c8dbc',
-                '#f56954',
-                '#f39c12',
-            ],
-        }],
-        labels: [
-            'Page Visits',
-            'Click Through',
-            'Errors'
-        ]
-    },
-    options: {
-        maintainAspectRatio: false,
-        legend: {
-            position: 'bottom',
-            labels: {
-                boxWidth: 12
-            }
-        }
-    }
-});
-
-new Chart(document.getElementById("lines"), {
+new Chart(document.getElementById('salesData'), {
     type: 'line',
     data: {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
-        datasets: [{
-            label: '# of Users',
-            data: [20, 39, 43, 50, 62],
-            borderColor: ['#3c8dbc'],
-            pointBackgroundColor: ['#FF0000', '#00FF00', '#FFFF00', '#00FFFF', '#FF00FF'],
-            fill: false
-        }]
+        labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        datasets: [
+            {
+                label: "Trash",
+                borderColor: "rgba(145, 78, 206, 1)",
+                backgroundColor: "rgba(145, 78, 206, .1)",
+                data: [340, 300, 250, 450, 250, 340, 300],
+            },
+            {
+                label: "Recycling",
+                borderColor: "rgba(88, 188, 116, 1)",
+                backgroundColor: "rgba(20, 75, 35, .3)",
+                data: [190, 170, 210, 360, 220, 250, 200]
+            },
+            {
+                label: "Split Truck",
+                borderColor: "rgba(0, 20, 240, 1)",
+                backgroundColor: "rgba(0, 0, 206, .3)",
+                data: [100, 140, 110, 260, 200, 90, 140]
+            }
+        ]
     },
     options: {
-        maintainAspectRatio: true,
-        title: {
-            display: true,
-            text: 'People Using Our Product (in millions)'
-        },
+        responsive: true,
         scales: {
             yAxes: [{
+                scaleLabel: {
+                    display: true,
+                    labelString: "Weight in Ton's",
+                    padding: 10
+                },
                 ticks: {
                     beginAtZero: true
                 }
@@ -132,23 +80,3 @@ new Chart(document.getElementById("lines"), {
     }
 });
 
-new Chart(document.getElementById("bar-chart-horizontal"), {
-    type: 'horizontalBar',
-    data: {
-        labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
-        datasets: [
-            {
-                label: "Users ",
-                backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
-                data: [478, 1867, 734, 784, 1433]
-            }
-        ]
-    },
-    options: {
-        legend: { display: false },
-        title: {
-            display: true,
-            text: 'User Traffic by Country'
-        }
-    }
-});
