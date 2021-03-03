@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function cardStyleToggle() {
     document.querySelectorAll('.card').forEach(item => {
         item.classList.toggle('bg-light')
-        item.classList.toggle('bg-dark')
+        item.classList.toggle('bg-secondary')
         item.classList.toggle('text-dark')
         item.classList.toggle('text-light')
     })

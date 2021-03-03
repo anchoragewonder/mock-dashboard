@@ -15,6 +15,9 @@ a:focus {
     transition: all 0.3s;
 }
 
+h2{
+    text-align: center;
+}
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -141,13 +144,8 @@ ul ul a {
 }
 
 #buttonGroup{
-    justify-content: space-between;
-    padding: 20px 30px;
-    background: #fafafa;
-    border: none;
-    border-radius: 1em;
+    justify-content:space-between;
     margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .data-row{
@@ -165,9 +163,14 @@ ul ul a {
     justify-content: space-between;
 }
 
+#theme-toggle { 
+    background-color: #262a30;
+    color: #fff;
+}
 table {
     width: 100%;
     border-collapse: collapse;
+    justify-content: center;
 }
 
 th {
@@ -189,6 +192,32 @@ td {
     line-height: 40px;
     font-weight: 300;
     padding: 0 10px;
+}
+
+/*------------------------------------------------------------
+        ICON STYLE
+--------------------------------------------------------------*/
+
+.icon-shape {
+    display: inline-flex;
+    padding: 12px;
+    text-align: center;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.bg-gradient-green {
+    background: linear-gradient(87deg,#2dce89 0,#2dcecc 100%)!important;
+}
+
+.bg-gradient-blue {
+    background:linear-gradient(87deg,#11cdef 0,#1171ef 100%)!important; 
 }
 
 @media screen and (max-width: 576px) {
