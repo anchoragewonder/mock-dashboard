@@ -65,6 +65,7 @@ new Chart(document.getElementById('salesData'), {
     },
     options: {
         responsive: true,
+        maintainAspectRatio: false,
         scales: {
             yAxes: [{
                 scaleLabel: {

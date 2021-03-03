@@ -220,8 +220,15 @@ td {
     background:linear-gradient(87deg,#11cdef 0,#1171ef 100%)!important; 
 }
 
+.bg-gradient-orange {
+    background: linear-gradient(87deg,#fb6340 0,#fbb140 100%)!important;
+}
+
+.bg-gradient-purple {
+    background:linear-gradient(87deg,#7a19e9 0,#1171ef 100%)!important;
+}
 @media screen and (max-width: 576px) {
-    .chartSpacing{
-        margin-top: 0px;
-    }
+   .chart-height {
+       height: 40vh;
+   }
 }
