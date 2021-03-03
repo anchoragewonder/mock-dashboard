@@ -148,6 +148,10 @@ ul ul a {
     margin-bottom: 40px;
 }
 
+.chart-height{
+    height: 60vh;
+}
+
 .data-row{
     margin-bottom: 10px;
     display: flex;
